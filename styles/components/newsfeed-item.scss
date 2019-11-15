@@ -1,0 +1,64 @@
+.newsfeed-item {
+  margin-bottom: 30px;
+
+  .newsfeed-thumb {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #d7d7d7;
+
+    @include tablet {
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    @include phone {
+        margin-bottom: 20px;
+    }
+  }
+
+  .newsfeed-title {
+    font-size: 26px;
+
+    @include phone {
+        font-size: 22px;
+    }
+  }
+
+  .newsfeed-meta {
+    margin-bottom: 15px;
+
+    .newsfeed-source,
+    .newsfeed-author,
+    .newsfeed-time {
+      color: #999;
+      font-size: 14px;
+
+      @include phone {
+          font-size: 12px;
+      }
+
+      &:hover {
+          color: #000;
+      }
+    }
+
+    .newsfeed-source {
+      margin: 0;
+    }
+
+    .newsfeed-author {
+      margin-left: 15px;
+    }
+
+    .newsfeed-time {
+      margin-left: 15px;
+
+      @include phone {
+          display: block;
+      }
+    }
+  }
+}

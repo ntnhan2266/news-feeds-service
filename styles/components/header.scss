@@ -1,0 +1,9 @@
+.header {
+    .navbar-brand {
+        font-size: 32px;
+
+        @include phone {
+            font-size: 26px;
+        }
+    }
+}
