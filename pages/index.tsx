@@ -3,7 +3,6 @@ import Head from 'next/head';
 
 import Layout from '../src/components/layouts/Layout';
 import NewsfeedList from '../src/components/NewsfeedList';
-import AddButton from '../src/components/AddButton';
 
 class IndexPage extends React.Component {
     static async getInitialProps() {
@@ -18,7 +17,6 @@ class IndexPage extends React.Component {
                 </Head>
                 <Layout>
                   <NewsfeedList />
-                  <AddButton />
                 </Layout>
             </div>
         );

@@ -32,12 +32,12 @@ export class NewsfeedItem extends React.Component<
       <div className="newsfeed-item">
         <div className="row">
           <div className="col-lg-4">
-            <div className="newsfeed-thumb" style={{backgroundImage: `url(${data.urlToImage})`}} />
+            <a href="#"><div className="newsfeed-thumb" style={{backgroundImage: `url(${data.urlToImage})`}} /></a>
           </div>
           <div className="col-lg-8">
-            <h2 className="newsfeed-title">{data.title}</h2>
+            <a href="#" className="newsfeed-title">{data.title}</a>
             <div className="newsfeed-meta">
-              <a href='#' title={data.source.name} className="newsfeed-source">{data.source.name}</a>
+              <a href='#' title={data.source} className="newsfeed-source">{data.source}</a>
               <a href='#' title={data.author} className="newsfeed-author">{data.author}</a>
               <span title={Moment(data.publisedAt).format("d MMM YYYY HH:mm")} className="newsfeed-time">
                 {Moment(data.publisedAt).format("d MMM YYYY HH:mm")}

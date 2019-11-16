@@ -1,10 +1,5 @@
-export interface Source {
-  id?: string;
-  name: string;
-}
-
 export interface Newsfeed {
-  source: Source;
+  source: string;
   author: string;
   title: string;
   description: string;
